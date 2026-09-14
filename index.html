@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Givelo — Workbooks</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;background:#f3f2f2;color:#201e1d;font-family:Archivo,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  a{color:#201e1d;text-decoration:none}
+  a:hover{color:#ec3013}
+  .wrap{max-width:1100px;margin:0 auto;padding:clamp(32px,6vw,80px) clamp(20px,5vw,48px)}
+  .kicker{font-size:14px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#ec3013}
+  h1{font-size:clamp(44px,9vw,104px);font-weight:900;line-height:.9;letter-spacing:-.035em;margin:18px 0 0}
+  .lede{font-size:clamp(17px,2.2vw,24px);font-weight:600;line-height:1.35;color:#444141;max-width:42ch;margin-top:20px;text-wrap:pretty}
+  .rule{height:2px;background:#201e1d;margin:clamp(28px,5vw,48px) 0 0}
+  .row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:20px;align-items:center;padding:clamp(22px,3.5vw,34px) 0;border-bottom:2px solid rgba(32,30,29,.25)}
+  .season{display:flex;flex-direction:column;gap:6px;min-width:0}
+  .season b{font-size:clamp(26px,4.5vw,46px);font-weight:800;letter-spacing:-.02em;line-height:1.05}
+  .season span{font-size:15px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#605d5d}
+  .open{flex:0 0 auto;border:2px solid #201e1d;padding:12px 18px;font-size:14px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+  .open:hover{background:#ec3013;border-color:#ec3013;color:#f3f2f2}
+  .soon{flex:0 0 auto;padding:12px 18px;font-size:14px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#605d5d}
+  .row.muted b{color:#8b8b87}
+  .row.muted span{color:#605d5d}
+  footer{margin-top:clamp(36px,6vw,64px);font-size:14px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#605d5d}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="kicker">Givelo — B2B</div>
+  <h1>Workbooks</h1>
+  <p class="lede">Season workbooks for Givelo trade partners. Collections, fabrics, colourways, pricing and launch timing.</p>
+  <div class="rule"></div>
+
+  <a class="row" href="2027/s1/index.html">
+    <div class="season">
+      <b>Semester One 2027</b>
+      <span>Modern Classic · GVL RT · C.D.A · G90 — 43 styles</span>
+    </div>
+    <div class="open">Open →</div>
+  </a>
+
+  <div class="row muted">
+    <div class="season">
+      <b>Semester Two 2027</b>
+      <span>In development</span>
+    </div>
+    <div class="soon">Coming soon</div>
+  </div>
+
+  <footer>Givelo · Trade only</footer>
+</div>
+</body>
+</html>
