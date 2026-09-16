@@ -21,6 +21,9 @@
   a.row:focus-visible{outline:2px solid #ec3013;outline-offset:4px}
   .season{font-size:clamp(28px,4.4vw,52px);font-weight:800;letter-spacing:-0.02em;line-height:1.05}
   .meta{font-size:15px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#605d5d;margin-top:8px}
+  .badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+  .badge{font-size:13px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;border:2px solid rgba(32,30,29,0.3);padding:6px 10px}
+  .badge-lang{background:#201e1d;color:#f3f2f2;border-color:#201e1d}
   .go{font-size:15px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;border:2px solid currentColor;padding:12px 18px;white-space:nowrap}
   footer{margin-top:64px;padding-top:20px;border-top:2px solid rgba(32,30,29,0.4);display:flex;justify-content:space-between;gap:24px;font-size:14px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#605d5d;flex-wrap:wrap}
 </style>
@@ -32,21 +35,31 @@
       <span class="kicker">Partners only</span>
     </div>
     <h1>Workbooks</h1>
-    <p class="lede">Season reference books for Givelo trade partners. Collections, fabrics, fits, colourways and launch timing — one page per style.</p>
+    <p class="lede">Season reference books for Givelo trade partners. Collections, fabrics, fits, colourways and launch timing — one page per style. Choose your language and currency below.</p>
     <div class="rule"></div>
     <a class="row" href="2027/s1/">
       <span>
         <span class="season">Semester One 2027</span>
-        <span class="meta" style="display:block">Four collections — 43 styles · English · USD</span>
+        <span class="meta" style="display:block">Four collections — 43 styles</span>
+        <span class="badges"><span class="badge badge-lang">English</span><span class="badge">Prices in USD</span></span>
       </span>
       <span class="go">Open →</span>
     </a>
     <a class="row" href="2027/s1-es/">
       <span>
         <span class="season">Semestre Uno 2027</span>
-        <span class="meta" style="display:block">Cuatro colecciones — 43 modelos · Español · USD</span>
+        <span class="meta" style="display:block">Cuatro colecciones — 43 modelos</span>
+        <span class="badges"><span class="badge badge-lang">Español</span><span class="badge">Precios en USD</span></span>
       </span>
       <span class="go">Abrir →</span>
+    </a>
+    <a class="row" href="2027/s1-fr/">
+      <span>
+        <span class="season">Premier semestre 2027</span>
+        <span class="meta" style="display:block">Quatre collections — 43 modèles</span>
+        <span class="badges"><span class="badge badge-lang">Français (CA)</span><span class="badge">Prix en CAD</span></span>
+      </span>
+      <span class="go">Ouvrir →</span>
     </a>
     <footer>
       <span>Givelo</span>
