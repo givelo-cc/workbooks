@@ -52,9 +52,9 @@
     <div class="pick">
       <span class="pick-l">Language</span>
       <div class="opts" id="lang">
-        <button class="opt on" data-v="s1">English<small>Semester One 2027</small></button>
-        <button class="opt" data-v="s1-es">Español<small>Semestre Uno 2027</small></button>
-        <button class="opt" data-v="s1-fr">Français (CA)<small>Premier semestre 2027</small></button>
+        <button class="opt on" data-v="en">English<small>Semester One 2027</small></button>
+        <button class="opt" data-v="es">Español<small>Semestre Uno 2027</small></button>
+        <button class="opt" data-v="fr">Français (CA)<small>Premier semestre 2027</small></button>
       </div>
     </div>
     <div class="pick">
@@ -65,17 +65,17 @@
         <button class="opt" data-v="COP">COP<small>Colombian peso</small></button>
       </div>
     </div>
-    <a class="open" id="open" href="2027/s1/?cur=USD"><span>Open workbook →</span><span id="sum">English · USD</span></a>
+    <a class="open" id="open" href="2027/s1/?lang=en&cur=USD"><span>Open workbook →</span><span id="sum">English · USD</span></a>
     <script>
       (function(){
-        var lang='s1', cur='USD';
-        var names={'s1':'English','s1-es':'Español','s1-fr':'Français (CA)'};
-        var defCur={'s1':'USD','s1-es':'USD','s1-fr':'CAD'};
+        var lang='en', cur='USD';
+        var names={'en':'English','es':'Español','fr':'Français (CA)'};
+        var defCur={'en':'USD','es':'USD','fr':'CAD'};
         var curTouched=false;
         function paint(){
           document.querySelectorAll('#lang .opt').forEach(function(b){b.classList.toggle('on',b.dataset.v===lang)});
           document.querySelectorAll('#cur .opt').forEach(function(b){b.classList.toggle('on',b.dataset.v===cur)});
-          document.getElementById('open').href='2027/'+lang+'/?cur='+cur;
+          document.getElementById('open').href='2027/s1/?lang='+lang+'&cur='+cur;
           document.getElementById('sum').textContent=names[lang]+' · '+cur;
         }
         document.getElementById('lang').addEventListener('click',function(e){var b=e.target.closest('.opt');if(!b)return;lang=b.dataset.v;if(!curTouched)cur=defCur[lang];paint()});
