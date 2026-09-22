@@ -29,6 +29,7 @@
   .pick{display:grid;grid-template-columns:140px minmax(0,1fr);gap:20px;align-items:center;padding:14px 0;border-bottom:2px solid rgba(32,30,29,0.25)}
   .pick-l{font-size:13px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#605d5d}
   .opts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+  #cur{grid-template-columns:repeat(2,minmax(0,1fr))}
   .opt{font-family:inherit;font-size:16px;font-weight:700;text-align:left;padding:14px 16px;border:2px solid #201e1d;background:#f3f2f2;color:#201e1d;cursor:pointer}
   .opt:hover{background:#e6e4e2}
   .opt.on{background:#201e1d;color:#f3f2f2}
@@ -62,7 +63,6 @@
       <div class="opts" id="cur">
         <button class="opt on" data-v="USD">USD<small>US dollar</small></button>
         <button class="opt" data-v="CAD">CAD<small>Canadian dollar</small></button>
-        <button class="opt" data-v="COP">COP<small>Colombian peso</small></button>
       </div>
     </div>
     <a class="open" id="open" href="2027/s1/?lang=en&cur=USD"><span>Open workbook →</span><span id="sum">English · USD</span></a>
